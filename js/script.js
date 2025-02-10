@@ -1,4 +1,5 @@
 const grid = document.querySelector("#grid-container");
+let currentGridSize;
 
 const clearGrid = () => {
     grid.innerHTML = "";
@@ -16,6 +17,11 @@ const generateGrid = (gridSize) => {
         const div = document.createElement("div");
         div.classList.add("grid-block");
         // div.innerText = i; // Debugging
+
+        div.addEventListener("mouseover", () => {
+            console.log("entered")
+            div.style.backgroundColor = "grey";
+        })
 
         div.style.height = 960/gridSize + "px";
         div.style.width = 960/gridSize + "px";
