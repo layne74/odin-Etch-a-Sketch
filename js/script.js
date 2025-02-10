@@ -5,11 +5,15 @@ const grid_size = document.querySelector("#grid-size");
 const change_canvas_size_btn = document.querySelector("#change_canvas_size_btn");
 const clear_canvas_btn = document.querySelector("#clear_canvas_btn");
 
+// Button event listeners
 change_canvas_size_btn.addEventListener("click", () => changeCanvasSize());
 clear_canvas_btn.addEventListener("click", () => generateGrid());
 
-
+// Holds the grid size after user sets it
 let currentGridSize;
+
+// Initial defalt Grid size (before user sets it)
+const DEFAULT_GRID_SIZE = 16;
 
 // Get new Grid size
 const changeCanvasSize = () => {
@@ -35,15 +39,11 @@ const changeCanvasSize = () => {
     generateGrid();
 };
 
-const clearGrid = () => {
-    grid.innerHTML = "";
-};
-
 const generateGrid = () => {
-    clearGrid();
+    grid.innerHTML = "";
 
     // If a size has not been set, use the defualt size of 16 x 16
-    let gridSize = currentGridSize || 16;
+    let gridSize = currentGridSize || DEFAULT_GRID_SIZE;
 
     // Update the UI to reflect current grid size
     grid_size.innerText = `${gridSize} x ${gridSize}`;
@@ -60,7 +60,7 @@ const generateGrid = () => {
         // div.innerText = i; // Debugging
 
         div.addEventListener("mouseover", () => {
-            div.style.backgroundColor = "grey";
+            div.classList.add("colour_block")
         })
 
         div.style.height = 960 / gridSize + "px";

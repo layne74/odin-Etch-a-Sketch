@@ -1,6 +1,16 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(105, 19, 19);
+}
+
 h2,
-h4,#buttons{
+h4,
+#buttons {
     text-align: center;
+    color: whitesmoke;
 }
 
 #grid-container {
@@ -8,6 +18,8 @@ h4,#buttons{
     flex-wrap: wrap;
     margin: 0 auto;
     background-color: rgba(222, 235, 232, 0.849);
+    border: 2px solid rgba(0, 0, 0, 0.315);
+    border-radius: 3px;
 }
 
 .grid-block {
@@ -15,4 +27,31 @@ h4,#buttons{
     border: 1px solid rgba(0, 0, 0, 0.010);
 }
 
+.colour_block {
+    background-color: rgb(85, 85, 85);
+}
 
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.blue-btn {
+    background-color: rgb(76, 138, 253);
+    color: white;
+}
+
+.blue-btn:hover {
+    background-color: rgb(118, 165, 252);;
+}
+
+.orange-btn {
+    background-color: rgb(255, 190, 69);
+}
+
+.orange-btn:hover {
+    background-color: rgb(253, 207, 122);
+}
