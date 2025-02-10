@@ -51,8 +51,11 @@ const generateGrid = () => {
     // Calculation for how many blocks are needed
     const block_count = Math.pow(gridSize, 2)
 
-    grid.style.height = 960 + "px";
-    grid.style.width = 960 + "px";
+    // Pizel size for canvas
+    const grid_width_height = 764;
+
+    grid.style.height = grid_width_height + "px";
+    grid.style.width = grid_width_height + "px";
 
     for (let i = 0; i < block_count; i++) {
         const div = document.createElement("div");
@@ -63,8 +66,8 @@ const generateGrid = () => {
             div.classList.add("colour_block")
         })
 
-        div.style.height = 960 / gridSize + "px";
-        div.style.width = 960 / gridSize + "px";
+        div.style.height = grid_width_height / gridSize + "px";
+        div.style.width = grid_width_height / gridSize + "px";
 
         grid.appendChild(div)
     }

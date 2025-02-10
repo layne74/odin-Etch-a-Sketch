@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h2>Odin Etch-a-Sketch</h2>
+    <h1>Odin Etch-a-Sketch</h1>
     <div id="buttons">
         <button id="change_canvas_size_btn" class="blue-btn">Change Canvas Size</button>
         <button id="clear_canvas_btn" class="orange-btn">Clear Canvas</button>
@@ -17,8 +17,22 @@
     <h4>Current Grid Size: <span id="grid-size"></span></h4>
     <div id="grid-container"></div>
 
+    <div id="knobs">
+        <div class="knob" id="knob-x">
+            <div class="knob-inner">
+                <div class="knob-mark"></div>
+            </div>
+        </div>
+        <div class="knob" id="knob-y">
+            <div class="knob-inner">
+                <div class="knob-mark"></div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="./js/script.js"></script>
+    <script src="./js/knobs_logic.js"></script>
 </body>
 
 </html>
