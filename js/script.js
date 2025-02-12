@@ -63,7 +63,11 @@ const generateGrid = () => {
         // div.innerText = i; // Debugging
 
         div.addEventListener("mouseover", () => {
-            div.classList.add("colour_block")
+            div.classList.add("colour_block");
+            let currentOpacity = window.getComputedStyle(div, null).getPropertyValue("opacity");
+            div.style.opacity = parseFloat(currentOpacity) + 0.1;
+            console.log(currentOpacity)
+            
         })
 
         div.style.height = grid_width_height / gridSize + "px";
