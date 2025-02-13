@@ -14,11 +14,12 @@ simple Etch-a-Sketch game
 
 ## Deployment
 
-Not deployed yet.
+<!-- Not deployed yet. -->
 
-<!-- This webpage is deployed and able to be viewed on [Vercel]('https://vercel.com/' 'Link to Vercel homepage').
+<!-- This webpage is deployed and able to be viewed on [Vercel]('https://vercel.com/' 'Link to Vercel homepage'). -->
 
-[Go to deployed webpage.](https://odin-landing-page-pearl.vercel.app/) -->
+[Go to deployed webpage.](https://layne74.github.io/odin-Etch-a-Sketch/) 
+
 
 ## Authors
 
